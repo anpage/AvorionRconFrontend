@@ -23,6 +23,7 @@ export default class PlayerTable extends Component {
                         <th className="text-center">Index</th>
                         <th className="text-center">Name</th>
                         <th className="text-center">Money</th>
+                        <th className="text-center">Sector</th>
                         <th className="text-center">
                             <Button>
                                 <i className="fa fa-refresh" />
@@ -36,6 +37,7 @@ export default class PlayerTable extends Component {
                             <th className="text-center" scope="row">{player.index}</th>
                             <td>{player.name}</td>
                             <td>{player.money}</td>
+                            <td>{player.sector[0]}, {player.sector[1]}</td>
                             <td><PlayerDropdown /></td>
                         </tr>
                     )}
