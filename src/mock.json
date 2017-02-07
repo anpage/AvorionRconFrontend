@@ -1,0 +1,14 @@
+{
+    "players": [
+        {
+            "name": "Ploycat",
+            "index": 1,
+            "money": 123331
+        },
+        {
+            "name": "Rico",
+            "index": 2,
+            "money": 244112
+        }
+    ]
+}
