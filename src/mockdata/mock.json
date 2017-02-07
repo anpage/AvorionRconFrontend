@@ -1,14 +1,29 @@
 {
+    "server": {
+        "name": "Cats? Cats.",
+        "description": "A Rico and Valter server",
+        "seed": "kittycats",
+        "uptime": 345436,
+        "lastsave": 345200
+    },
     "players": [
         {
             "name": "Ploycat",
             "index": 1,
-            "money": 123331
+            "money": 123331,
+            "sector": [
+                103,
+                -77
+            ]
         },
         {
             "name": "Rico",
             "index": 2,
-            "money": 244112
+            "money": 244112,
+            "sector": [
+                104,
+                -76
+            ]
         }
     ]
 }
