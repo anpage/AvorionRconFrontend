@@ -21,6 +21,14 @@
       "sector": [
         104, -76
       ]
+    },
+    {
+      "name": "Solus",
+      "index": 3,
+      "money": 112,
+      "sector": [
+        100, -50
+      ]
     }
   ]
 }
