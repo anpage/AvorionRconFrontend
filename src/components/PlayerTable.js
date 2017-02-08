@@ -40,11 +40,11 @@ export default class PlayerTable extends Component {
           </thead>
           <tbody>
             {players.map((player) => <tr key={player.index}>
-              <th className="text-center" scope="row">{player.index}</th>
-              <td>{player.name}</td>
-              <td>{player.money}</td>
-              <td>{player.sector[0]}, {player.sector[1]}</td>
-              <td><PlayerDropdown/></td>
+              <th className="text-center align-middle" scope="row">{player.index}</th>
+              <td className="align-middle">{player.name}</td>
+              <td className="align-middle">{player.money}</td>
+              <td className="align-middle">{player.sector[0]}, {player.sector[1]}</td>
+              <td className="align-middle"><PlayerDropdown/></td>
             </tr>)}
           </tbody>
         </Table>
