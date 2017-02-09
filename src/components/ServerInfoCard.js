@@ -23,12 +23,12 @@ export default class PlayerDropdown extends Component {
       }).isRequired
     })
   }
-  
+
   static secondsToTimeString(seconds) {
     const date = new Date(seconds * 1000); // Milliseconds
     return date.toISOString().substr(11, 8);
   }
-  
+
   render() {
     const server = this.props.serverData;
     return (
@@ -53,7 +53,7 @@ export default class PlayerDropdown extends Component {
             {moment().subtract(server.lastSave, 'seconds').fromNow()}
           </CardText>
         </CardBlock>
-        
+
         <CardBlock>
           <CardTitle><FontAwesome name="database"/> System Information</CardTitle>
           <CardSubtitle>Stats about server processes</CardSubtitle>
@@ -65,17 +65,17 @@ export default class PlayerDropdown extends Component {
           </CardText>
         </CardBlock>
         <CardBlock>
-            <CardSubtitle>Memory</CardSubtitle>
-            <CardText>
-              <Progress value={server.memUsage}>{server.memUsage} MB</Progress>
-            </CardText>
-          </CardBlock>
-      <CardBlock>
-        <CardTitle>Server Actions</CardTitle>
-        <Button outline color="primary" size="sm"><FontAwesome name="save"/> Force Save</Button>{' '}
-        <Button outline color="primary" size="sm"><FontAwesome name="frown-o"/> Message All</Button>{' '}
-        <Button outline color="danger" size="sm"><FontAwesome name="refresh"/> Reboot</Button>{' '}
-      </CardBlock>
+          <CardSubtitle>Memory</CardSubtitle>
+          <CardText>
+            <Progress value={server.memUsage}>{server.memUsage} MB</Progress>
+          </CardText>
+        </CardBlock>
+        <CardBlock>
+          <CardTitle>Server Actions</CardTitle>
+          <Button outline color="primary" size="sm"><FontAwesome name="save"/> Force Save</Button>
+          <Button outline color="primary" size="sm"><FontAwesome name="frown-o"/> Message All</Button>
+          <Button outline color="danger" size="sm"><FontAwesome name="refresh"/> Reboot</Button>
+        </CardBlock>
       </Card>
     )
   }

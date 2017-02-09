@@ -14,8 +14,8 @@ export default class PlayerTable extends Component {
     return ({
       playerData: React.PropTypes.arrayOf(
         React.PropTypes.shape({
-          index: React.PropTypes.number, 
-          name: React.PropTypes.string, 
+          index: React.PropTypes.number,
+          name: React.PropTypes.string,
           money: React.PropTypes.number
         }).isRequired
       )

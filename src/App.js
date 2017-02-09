@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col} from 'reactstrap'
+import {Container, Row, Col} from 'reactstrap';
 
 import ServerInfoCard from './components/ServerInfoCard.js';
 import PlayerTable from './components/PlayerTable.js';
