@@ -18,7 +18,7 @@ export default class PlayerDropdown extends Component {
 
   render() {
     return (
-      <Dropdown isOpen={this.state.open} toggle={this.toggle}>
+      <Dropdown size="sm" isOpen={this.state.open} toggle={this.toggle}>
         <DropdownToggle caret><i className="fa fa-cog"/></DropdownToggle>
         <DropdownMenu>
           <DropdownItem>Message</DropdownItem>
