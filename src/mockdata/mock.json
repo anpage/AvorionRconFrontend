@@ -4,7 +4,9 @@
     "description": "A Rico and Valter server",
     "seed": "kittycats",
     "uptime": 1337,
-    "lastSave": 251
+    "lastSave": 856,
+    "cpuUsage": 40,
+    "memUsage": 512
   },
   "players": [{
       "name": "Ploycat",
