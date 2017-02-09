@@ -60,15 +60,11 @@ export default class PlayerDropdown extends Component {
         </CardBlock>
         <CardBlock>
           <CardSubtitle>CPU</CardSubtitle>
-          <CardText>
-            <Progress value={server.cpuUsage}>{server.cpuUsage}%</Progress>
-          </CardText>
+          <Progress value={server.cpuUsage}>{server.cpuUsage}%</Progress>
         </CardBlock>
         <CardBlock>
           <CardSubtitle>Memory</CardSubtitle>
-          <CardText>
-            <Progress value={server.memUsage}>{server.memUsage} MB</Progress>
-          </CardText>
+          <Progress value={server.memUsage}>{server.memUsage} MB</Progress>
         </CardBlock>
         <CardBlock>
           <CardTitle>Server Actions</CardTitle>
