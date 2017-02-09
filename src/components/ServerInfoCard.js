@@ -1,11 +1,12 @@
-import { Button } from 'reactstrap';
 import React, { Component } from 'react';
 import {
   Card,
   CardBlock,
   CardTitle,
   CardSubtitle,
-  CardText
+  CardText,
+  Button,
+  Progress
 } from 'reactstrap';
 import moment from 'moment';
 
@@ -51,6 +52,23 @@ export default class PlayerDropdown extends Component {
             {moment().subtract(server.lastSave, 'seconds').fromNow()}
           </CardText>
         </CardBlock>
+        
+        <CardBlock>
+          <CardTitle>System Information</CardTitle>
+          <CardSubtitle>Stats about server processes</CardSubtitle>
+        </CardBlock>
+        <CardBlock>
+          <CardSubtitle>CPU</CardSubtitle>
+          <CardText>
+            <Progress value={server.cpuUsage}>{server.cpuUsage}%</Progress>
+          </CardText>
+        </CardBlock>
+        <CardBlock>
+            <CardSubtitle>Memory</CardSubtitle>
+            <CardText>
+              <Progress value={server.memUsage}>{server.memUsage} MB</Progress>
+            </CardText>
+          </CardBlock>
       <CardBlock>
         <CardTitle>Server Actions</CardTitle>
         <Button outline color="primary" size="sm">Force Save</Button>{' '}
