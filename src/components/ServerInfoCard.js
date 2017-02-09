@@ -54,7 +54,7 @@ export default class PlayerDropdown extends Component {
         </CardBlock>
         
         <CardBlock>
-          <CardTitle>System Information</CardTitle>
+          <CardTitle><i className="fa fa-database"/> System Information</CardTitle>
           <CardSubtitle>Stats about server processes</CardSubtitle>
         </CardBlock>
         <CardBlock>
@@ -71,9 +71,9 @@ export default class PlayerDropdown extends Component {
           </CardBlock>
       <CardBlock>
         <CardTitle>Server Actions</CardTitle>
-        <Button outline color="primary" size="sm">Force Save</Button>{' '}
-        <Button outline color="primary" size="sm">Message All</Button>{' '}
-        <Button outline color="danger" size="sm">Reboot</Button>{' '}
+        <Button outline color="primary" size="sm"><i className="fa fa-save"/> Force Save</Button>{' '}
+        <Button outline color="primary" size="sm"><i className="fa fa-frown-o"/> Message All</Button>{' '}
+        <Button outline color="danger" size="sm"><i className="fa fa-refresh"/> Reboot</Button>{' '}
       </CardBlock>
       </Card>
     )

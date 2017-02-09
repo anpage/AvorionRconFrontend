@@ -26,7 +26,7 @@ export default class PlayerTable extends Component {
     return (
       <Card>
         <CardBlock>
-          <CardTitle>Players</CardTitle>
+          <CardTitle><i className="fa fa-users"/> Players</CardTitle>
         </CardBlock>
         <Table striped hover>
           <thead>
