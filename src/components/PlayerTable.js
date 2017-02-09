@@ -5,6 +5,7 @@ import {
   CardBlock,
   CardTitle,
 } from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 import PlayerDropdown from './PlayerDropdown.js';
 
@@ -26,7 +27,7 @@ export default class PlayerTable extends Component {
     return (
       <Card>
         <CardBlock>
-          <CardTitle><i className="fa fa-users"/> Players</CardTitle>
+          <CardTitle><FontAwesome name="users"/> Players</CardTitle>
         </CardBlock>
         <Table striped hover>
           <thead>

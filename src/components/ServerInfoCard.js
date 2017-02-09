@@ -8,6 +8,7 @@ import {
   Button,
   Progress
 } from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 import moment from 'moment';
 
 export default class PlayerDropdown extends Component {
@@ -54,7 +55,7 @@ export default class PlayerDropdown extends Component {
         </CardBlock>
         
         <CardBlock>
-          <CardTitle><i className="fa fa-database"/> System Information</CardTitle>
+          <CardTitle><FontAwesome name="database"/> System Information</CardTitle>
           <CardSubtitle>Stats about server processes</CardSubtitle>
         </CardBlock>
         <CardBlock>
@@ -71,9 +72,9 @@ export default class PlayerDropdown extends Component {
           </CardBlock>
       <CardBlock>
         <CardTitle>Server Actions</CardTitle>
-        <Button outline color="primary" size="sm"><i className="fa fa-save"/> Force Save</Button>{' '}
-        <Button outline color="primary" size="sm"><i className="fa fa-frown-o"/> Message All</Button>{' '}
-        <Button outline color="danger" size="sm"><i className="fa fa-refresh"/> Reboot</Button>{' '}
+        <Button outline color="primary" size="sm"><FontAwesome name="save"/> Force Save</Button>{' '}
+        <Button outline color="primary" size="sm"><FontAwesome name="frown-o"/> Message All</Button>{' '}
+        <Button outline color="danger" size="sm"><FontAwesome name="refresh"/> Reboot</Button>{' '}
       </CardBlock>
       </Card>
     )

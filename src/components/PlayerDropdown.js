@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 export default class PlayerDropdown extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export default class PlayerDropdown extends Component {
   render() {
     return (
       <Dropdown size="sm" isOpen={this.state.open} toggle={this.toggle}>
-        <DropdownToggle caret><i className="fa fa-cog"/></DropdownToggle>
+        <DropdownToggle caret><FontAwesome name="cog"/></DropdownToggle>
         <DropdownMenu>
           <DropdownItem>Message</DropdownItem>
           <DropdownItem divider/>
