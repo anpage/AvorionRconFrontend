@@ -28,7 +28,7 @@ export default class PlayerTable extends Component {
         <CardBlock>
           <CardTitle>Players</CardTitle>
         </CardBlock>
-        <Table>
+        <Table striped hover>
           <thead>
             <tr>
               <th className="text-center">Index</th>
