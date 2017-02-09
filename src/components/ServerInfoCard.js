@@ -1,3 +1,4 @@
+import { Button } from 'reactstrap';
 import React, { Component } from 'react';
 import {
   Card,
@@ -50,6 +51,12 @@ export default class PlayerDropdown extends Component {
             {moment().subtract(server.lastSave, 'seconds').fromNow()}
           </CardText>
         </CardBlock>
+      <CardBlock>
+        <CardTitle>Server Actions</CardTitle>
+        <Button outline color="primary" size="sm">Force Save</Button>{' '}
+        <Button outline color="primary" size="sm">Message All</Button>{' '}
+        <Button outline color="danger" size="sm">Reboot</Button>{' '}
+      </CardBlock>
       </Card>
     )
   }
